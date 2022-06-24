@@ -111,7 +111,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
     <li>dimensions: 16x80</li>
   </ul>
  <h4>laser blast<h4>
-  <img src = 'public/assets/sprites/player/player-laserblast.png'>
+  <img src = 'public/assets/sprites/player/laserblast.png'>
   <ul>
     <li>Asset key: 'player-laserblast'</li>
     <li>path: 'public/assets/sprites/player/player-laserblast.png'</li>
