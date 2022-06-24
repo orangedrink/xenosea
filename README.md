@@ -176,6 +176,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
     <li>dimensions: 48x32</li>
     <li>animations: 
       <ul>
+        <li>key: 'ocean-fish1-idle', frames: [5]</li>
         <li>key: 'ocean-fish1-idle-left', frames: [5]</li>
         <li>key: 'ocean-fish1-idle-right', frames: [1]</li>
         <li>key: 'ocean-fish1-swim-left', frames: [4,5,6]</li>
@@ -193,6 +194,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
     <li>dimensions: 48x32</li>
     <li>animations: 
       <ul>
+        <li>key: 'ocean-fish2-idle', frames: [5]</li>
         <li>key: 'ocean-fish2-idle-left', frames: [5]</li>
         <li>key: 'ocean-fish2-idle-right', frames: [1]</li>
         <li>key: 'ocean-fish2-swim-left', frames: [4,5,6]</li>
@@ -253,7 +255,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
       </ul>
     </li>
   </ul>
-  /ul><h4>Super Metrid<h4>
+  <h4>Super Metrid<h4>
   <img src = 'public/assets/sprites/ocean/supermetrid.png'>
   <ul>
     <li>Asset key: 'supermetrid'</li>
@@ -266,6 +268,55 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
       </ul>
     </li>
   </ul>
+  <h4>Ocean Projectile Left<h4>
+  <img src = 'public/assets/sprites/ocean/projectile-left.png'>
+  <ul>
+    <li>Asset key: 'ocean-projectile-left'</li>
+    <li>path: 'public/assets/sprites/ocean/projectile-left.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'ocean-projectile-left-idle', frames: [0,2,4,6]</li>
+      </ul>
+    </li>
+  </ul>
+  <h4>Ocean Projectile Right<h4>
+  <img src = 'public/assets/sprites/ocean/projectile-right.png'>
+  <ul>
+    <li>Asset key: 'ocean-projectile-right'</li>
+    <li>path: 'public/assets/sprites/ocean/projectile-right.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'ocean-projectile-right-idle', frames: [0,2,4,6]</li>
+      </ul>
+    </li>
+  </ul>
+  <h4>Ocean Blast Left<h4>
+  <img src = 'public/assets/sprites/ocean/blast-left.png'>
+  <ul>
+    <li>Asset key: 'ocean-blast-left'</li>
+    <li>path: 'public/assets/sprites/ocean/blast-left.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'ocean-blast-left', frames: [0,1]</li>
+      </ul>
+    </li>
+  </ul>
+  <h4>Ocean Blast Right<h4>
+  <img src = 'public/assets/sprites/ocean/blast-right.png'>
+  <ul>
+    <li>Asset key: 'ocean-blast-right'</li>
+    <li>path: 'public/assets/sprites/ocean/blast-right.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'ocean-blast-left', frames: [0,1]</li>
+      </ul>
+    </li>
+  </ul>
+
 <h2>Deep ocean</h2>
 <img src = 'doc/assets/deep.png'>
   <h3>Enemies</h3>
@@ -278,6 +329,54 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <p>One or more spore sprites with an array of smaller sprites on top of it. Lives on the sides of the walls and shoots at the player? Descends from above forcing movement?</p>
   <p>An infinitely deep shaft so you can run up your depth score. Just a narrow shaft that repeats.</p>
   <img src = 'public/assets/bubble.png'><br />
+  <h4>Ocean Projectile Left<h4>
+  <img src = 'public/assets/sprites/ocean/projectile-left.png'>
+  <ul>
+    <li>Asset key: 'deep-projectile-left'</li>
+    <li>path: 'public/assets/sprites/deep/projectile-left.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'deep-projectile-left-idle', frames: [0,1,2,3]</li>
+      </ul>
+    </li>
+  </ul>
+  <h4>deep Projectile Right<h4>
+  <img src = 'public/assets/sprites/deep/projectile-right.png'>
+  <ul>
+    <li>Asset key: 'deep-projectile-right'</li>
+    <li>path: 'public/assets/sprites/deep/projectile-right.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'deep-projectile-right-idle', frames: [0,1,2,3]</li>
+      </ul>
+    </li>
+  </ul>
+  <h4>deep Blast Left<h4>
+  <img src = 'public/assets/sprites/deep/blast-left.png'>
+  <ul>
+    <li>Asset key: 'deep-blast-left'</li>
+    <li>path: 'public/assets/sprites/deep/blast-left.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'deep-blast-left', frames: [0,1]</li>
+      </ul>
+    </li>
+  </ul>
+  <h4>deep Blast Right<h4>
+  <img src = 'public/assets/sprites/deep/blast-right.png'>
+  <ul>
+    <li>Asset key: 'deep-blast-right'</li>
+    <li>path: 'public/assets/sprites/deep/blast-right.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'deep-blast-left', frames: [0,1]</li>
+      </ul>
+    </li>
+  </ul>
 
 <h2>Base</h2>
 <img src = 'doc/assets/base.png'>
