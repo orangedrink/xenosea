@@ -14,7 +14,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <p>
   The limitation is \'health as a tool\'. The harmful macroorganisms will spawn more when you have high health and helpful macroorganisms when you have low health.  High health could also lessen the cooldown of your weapons so it's a give and take.
   </p>
-<img src = 'public/assets/bubble.png'>
+  <img src = 'public/assets/bubble.png'>
 <h2>Player</h2>
 <img src = 'doc/assets/player.png'>
   <h3>Subs</h3>
@@ -29,6 +29,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <h3>Powerups</h3>
   <p>Macroorganisms with the blue glow give health. Other powerups give new weapons
   </p>
+  <img src = 'public/assets/bubble.png'>
 <h2>Open ocean</h2>
 <img src = 'doc/assets/ocean.png'>
   <p>Coming soon</p>
@@ -37,15 +38,18 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
 <h2>Deep ocean</h2>
 <img src = 'doc/assets/deep.png'>
   <p>Coming soon</p>
+  <img src = 'public/assets/bubble.png'>
 
 <h2>Base</h2>
 <img src = 'doc/assets/base.png'>
   <p>Coming soon</p>
+  <img src = 'public/assets/bubble.png'>
 
 <h2>Other assets and Tilesets</h2>
 <img src = 'doc/assets/rock.png'>
 <img src = 'doc/assets/metroidvania.png'>
   <p>Coming soon</p>
+  <img src = 'public/assets/bubble.png'>
 
 <!--
 ###########################################################################
