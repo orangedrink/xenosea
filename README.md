@@ -328,9 +328,32 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <p>Final unbeatable boss!
   <p>One or more spore sprites with an array of smaller sprites on top of it. Lives on the sides of the walls and shoots at the player? Descends from above forcing movement?</p>
   <p>An infinitely deep shaft so you can run up your depth score. Just a narrow shaft that repeats.</p>
-  <img src = 'public/assets/bubble.png'><br />
-  <h4>Ocean Projectile Left<h4>
-  <img src = 'public/assets/sprites/ocean/projectile-left.png'>
+  
+  
+  
+  <h3>Assets</h3>
+
+   <h4>deep fish 1<h4>
+  <img src = 'public/assets/sprites/deep/fish1.png'>
+  <ul>
+    <li>Asset key: 'deep-fish1'</li>
+    <li>path: 'public/assets/sprites/deep/fish1.png'</li>
+    <li>dimensions: 48x32</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'deep-fish1-idle', frames: [5]</li>
+        <li>key: 'deep-fish1-idle-left', frames: [5]</li>
+        <li>key: 'deep-fish1-idle-right', frames: [1]</li>
+        <li>key: 'deep-fish1-swim-left', frames: [4,5,6]</li>
+        <li>key: 'deep-fish1-swim-right', frames: [0,1,2]</li>
+        <li>key: 'deep-fish1-attack-left', frames: [7]</li>
+        <li>key: 'deep-fish1-attack-right', frames: [3]</li>
+      </ul>
+    </li>
+  </ul>
+  <h1>UP NEXT ANGERFISH</h1>
+  <h4>deep Projectile Left<h4>
+  <img src = 'public/assets/sprites/deep/projectile-left.png'>
   <ul>
     <li>Asset key: 'deep-projectile-left'</li>
     <li>path: 'public/assets/sprites/deep/projectile-left.png'</li>
@@ -377,6 +400,9 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
       </ul>
     </li>
   </ul>
+
+<img src = 'public/assets/bubble.png'><br />
+  
 
 <h2>Base</h2>
 <img src = 'doc/assets/base.png'>
