@@ -351,7 +351,15 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
       </ul>
     </li>
   </ul>
-  <h1>UP NEXT ANGERFISH</h1>
+  <h1>TO DO</h1>
+  <ul>
+
+  <li>Fish2</li>
+  <li>crab</li>
+  <li>sporegen</li>
+  <li>spore</li>
+
+  </ul>
   <h4>deep Projectile Left<h4>
   <img src = 'public/assets/sprites/deep/projectile-left.png'>
   <ul>
@@ -415,6 +423,15 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <h3>Tiles and doors</h3>
   <p>Opening doors have 4 frame open animation</p>
   <img src = 'public/assets/bubble.png'><br />
+
+  <h3>Assets</h3>
+  <h1>TO DO</h1>
+  <ul>
+
+  <li>Dockdrone</li>
+  <li>Dock</li>
+
+  </ul>
 
 <h2>Other assets and Tilesets</h2>
 <img src = 'doc/assets/rock.png'>
