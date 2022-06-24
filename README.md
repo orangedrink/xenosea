@@ -19,6 +19,10 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
 <img src = 'doc/assets/player.png'>
   <h3>Subs</h3>
   <p>The ships are shown here with the first on the bottom the second on the middle and the final ship on the top. New ships are found at a dock and you dock your current ship to take off in the new one. Use bubble.png and particles for propusion.</p>
+  
+
+  
+  
   <h3>Firing</h3>
   <p>Opening frame (2) is used to transition from idle to the firing frame for weapon in use</p>
   <p>The blast originates from the user. Smallest laser shoots single shot of med size laset beam. Med laser shoots one med laser and then rapid full auto fire of smallest laser. fire rate could depend on health per the limitation.
@@ -30,12 +34,65 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <h3>Powerups</h3>
   <p>Macroorganisms with the blue glow give health. Other powerups give new weapons
   </p>
-  </p>
+
+  <h4>Level 1 ship<h4>
+  <img src = 'public/assets/sprites/player/l1.png'>
+  <ul>
+    <li>Asset key: 'player-l1'</li>
+    <li>path: 'public/assets/sprites/player/l1.png'</li>
+    <li>dimensions: 32x32</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'player-l1-idle', frames: [0]</li>
+        <li>key: 'player-l1-firing', frames: [0,1,n]</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h4>Level 2 ship<h4>
+  <img src = 'public/assets/sprites/player/l2.png'>
+  <ul>
+    <li>Asset key: 'player-l2'</li>
+    <li>path: 'public/assets/sprites/player/l2.png'</li>
+    <li>dimensions: 32x32</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'player-l2-idle', frames: [0]</li>
+        <li>key: 'player-l2-firing', frames: [0,1,n]</li>
+      </ul>
+    </li>
+  </ul>
+  <h4>Level 3 ship<h4>
+  <img src = 'public/assets/sprites/player/l3.png'>
+  <ul>
+    <li>Asset key: 'player-l3'</li>
+    <li>path: 'public/assets/sprites/player/l3.png'</li>
+    <li>dimensions: 32x32</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'player-l3-idle', frames: [0]</li>
+        <li>key: 'player-l3-firing', frames: [0,1,n]</li>
+        <li>key: 'player-l3-landing', frames: [6,7,8]</li>
+      </ul>
+    </li>
+  </ul>
+
   <img src = 'public/assets/bubble.png'><br />
 <h2>Open ocean</h2>
 <img src = 'doc/assets/ocean.png'>
   <h3>Enemies</h3>
   <p>Fish swim back and forth. Swimming animation sequence is 1,2,3,2Fish with noses ram the player. Shoort nose fishes shoot projectiles.</p>
+  <ul>
+    <li>Asset key: ''</li>
+    <li>path: ''</li>
+    <li>animations: 
+      <ul>
+        <li>key: '', frames: []</li>
+        <li>key: '', frames: []</li>
+        <li>key: '', frames: []</li>
+      </ul>
+    </li>
+  </ul>
   <p>Yardworm lives on the walls and has 3 frame animation to crawl up and down. Shoots projectiles at the player.</p>
   <p>Harmful Macroorganisms will spawn more often when health is high and will hurt the player</p>
   <h3>Projectiles</h3>
