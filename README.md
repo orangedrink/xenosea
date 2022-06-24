@@ -58,7 +58,14 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
 
 <h2>Base</h2>
 <img src = 'doc/assets/base.png'>
-  <p>Coming soon</p>
+  <h3>Docks and launch bays</h3>
+  <p>Dockdrone has 3 frame landing animation. From landed state it can transition to closed dock.</p>
+  <p>Closed dock has three frame opening animation. </p>
+  <p>Open dock has three frame idle animation. </p>
+  <p>Docks can open based on game progress. </p>
+  <p>Launch bay can hold dockdrone in its landed state or ship upgrade</p>
+  <h3>Tiles and doors</h3>
+  <p>Opening doors have 4 frame open animation</p>
   <img src = 'public/assets/bubble.png'><br />
 
 <h2>Other assets and Tilesets</h2>
