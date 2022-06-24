@@ -351,14 +351,44 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
       </ul>
     </li>
   </ul>
+   <h4>deep fish 2<h4>
+  <img src = 'public/assets/sprites/deep/fish2.png'>
+  <ul>
+    <li>Asset key: 'deep-fish2'</li>
+    <li>path: 'public/assets/sprites/deep/fish2.png'</li>
+    <li>dimensions: 48x32</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'deep-fish2-idle', frames: [4]</li>
+        <li>key: 'deep-fish2-idle-left', frames: [4]</li>
+        <li>key: 'deep-fish2-idle-right', frames: [1]</li>
+        <li>key: 'deep-fish2-swim-left', frames: [3,4,5]</li>
+        <li>key: 'deep-fish2-swim-right', frames: [0,1,2]</li>
+        <li>key: 'deep-fish2-attack-left', frames: [4]</li>
+        <li>key: 'deep-fish2-attack-right', frames: [1]</li>
+      </ul>
+    </li>
+  </ul>
   <h1>TO DO</h1>
   <ul>
 
-  <li>Fish2</li>
-  <li>crab</li>
-  <li>sporegen</li>
-  <li>spore</li>
-
+ <h4>Crab<h4>
+  <img src = 'public/assets/sprites/deep/crab.png'>
+  <ul>
+    <li>Asset key: 'deep-crab'</li>
+    <li>path: 'public/assets/sprites/deep/crab.png'</li>
+    <li>dimensions: 48x32</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'deep-crab-idle', frames: [1]</li>
+        <li>key: 'deep-crab-idle-down', frames: [4]</li>
+        <li>key: 'deep-crab-idle-up', frames: [1]</li>
+        <li>key: 'deep-crab-crawl-down', frames: [3,4,5]</li>
+        <li>key: 'deep-crab-crawl-up', frames: [0,1,2]</li>
+        <li>key: 'deep-crab-attack-down', frames: [4]</li>
+        <li>key: 'deep-crab-attack-up', frames: [1]</li>
+      </ul>
+    </li>
   </ul>
   <h4>deep Projectile Left<h4>
   <img src = 'public/assets/sprites/deep/projectile-left.png'>
@@ -408,6 +438,15 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
       </ul>
     </li>
   </ul>
+
+
+  <h1>TO DO</h1>
+  <ul>
+  <li>sporegen</li>
+  <li>spore</li>
+  </ul>
+
+
 
 <img src = 'public/assets/bubble.png'><br />
   
