@@ -48,7 +48,12 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <h3>Enemies</h3>
   <p>Fish with noses ram the player as in ocean section above</p>
   <p>Crab crawls up and down usually on fungus. Shoots projectiles</p>
-  <p>Angerfish swims back and forth and shootls like short nose fish but in rapid fire</p>
+  <p>Mushrooms generate spores. There is a dead frame so player can kill spore generator. Spores have 2 frame pulsating animatoin</p>
+  <p>Angerfish swims back and forth and shoots like short nose fish but in rapid fire</p>
+  <h3>Spore monster</h3>
+  <p>Final unbeatable boss!
+  <p>One or more spore sprites with an array of smaller sprites on top of it. Lives on the sides of the walls and shoots at the player.</p>
+  <p>An infinitely deep shaft so you can run up your depth score. Just a narrow shaft that repeats.</p>
   <img src = 'public/assets/bubble.png'><br />
 
 <h2>Base</h2>
