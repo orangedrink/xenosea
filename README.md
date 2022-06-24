@@ -469,11 +469,14 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   </ul>
 
 <h2>Other assets and Tilesets</h2>
-<img src = 'doc/assets/rock.png'>
-<img src = 'doc/assets/metroidvania.png'>
+<img src = 'public/assets/tileset.png'>
 <img src = 'public/assets/steam.png'>
 <img src = 'public/assets/explosion.png'>
 <img src = 'public/assets/bubble.png'>
+
+
+
+
   <img src = 'public/assets/bubble.png'><br />
 
 <!--
