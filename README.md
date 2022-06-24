@@ -316,7 +316,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
       </ul>
     </li>
   </ul>
-
+<img src = 'public/assets/bubble.png'></br>
 <h2>Deep ocean</h2>
 <img src = 'doc/assets/deep.png'>
   <h3>Enemies</h3>
@@ -459,7 +459,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <p>Launch bay can hold dockdrone in its landed state or ship upgrade</p>
   <h3>Tiles and doors</h3>
   <p>Opening doors have 4 frame open animation</p>
-  <img src = 'public/assets/bubble.png'><br />
+ 
 
   <h3>Assets</h3>
   <h4>TO DO</h4>
@@ -467,7 +467,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <li>Dockdrone</li>
   <li>Dock</li>
   </ul>
-
+ <img src = 'public/assets/bubble.png'><br />
 <h2>Other assets and Tilesets</h2>
 <img src = 'public/assets/tileset.png'>
 <img src = 'public/assets/steam.png'>
