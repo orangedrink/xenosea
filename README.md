@@ -369,8 +369,6 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
       </ul>
     </li>
   </ul>
-  <h1>TO DO</h1>
-  <ul>
 
  <h4>Crab<h4>
   <img src = 'public/assets/sprites/deep/crab.png'>
