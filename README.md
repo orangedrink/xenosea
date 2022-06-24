@@ -1,8 +1,12 @@
 
 
 <h1>XENOSEA</h1>
-<h2>Outline</h2>
 <img src = 'doc/assets/title.png'>
+
+<h2>Outline</h2>
+<p>
+Classic shooter flipped upside down as you descend into the life filled oceans of Europa.
+</p>
 <h2>Player</h2>
 <img src = 'doc/assets/player.png'>
 <h2>Open ocean</h2>
@@ -14,7 +18,10 @@
 <h2>Other Tilesets</h2>
 <img src = 'doc/assets/rock.png'>
 <img src = 'doc/assets/metroidvania.png'>
+<!--
+###########################################################################
 
+--> 
 <h1>XENOSEA was created using:</h1>
 <h1 align="center">
   <br>
