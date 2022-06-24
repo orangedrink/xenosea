@@ -36,7 +36,9 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
 <img src = 'doc/assets/ocean.png'>
   <p>Fish with noses ram the player. Shoort nose fishes shoot projectiles. Swimming animation sequence is 1,2,3,2</p>
   <p>Yardwork lives on th ewalls and has 3 fram animation to crawl up and down</p>
-  <p>Harmful Macroorganisms will spawn more often when health is high and will hurt the player
+  <p>Harmful Macroorganisms will spawn more often when health is high and will hurt the player</p>
+  <p>Projectiles shoot left and right and have a 4 frame blinking/rotating animation. 1234,1234</p>
+  <p>Blast animation appears at origin of projectiles and is animated 1,2 and then disappears.
   <h3>Super Metrid</h3>
   <p>Boss Fight! Lots of health. Idle pulsating animation is 123,123. Attack animation is also 123,123</p>
 <h2>Deep ocean</h2>
@@ -52,6 +54,9 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
 <h2>Other assets and Tilesets</h2>
 <img src = 'doc/assets/rock.png'>
 <img src = 'doc/assets/metroidvania.png'>
+<img src = 'public/assets/steam.png'>
+<img src = 'public/assets/explosion.png'>
+<img src = 'public/assets/bubble.png'>
   <p>Coming soon</p>
   <img src = 'public/assets/bubble.png'><br />
 
