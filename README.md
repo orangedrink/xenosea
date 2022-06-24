@@ -34,6 +34,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <h3>Powerups</h3>
   <p>Macroorganisms with the blue glow give health. Other powerups give new weapons
   </p>
+   <h3>Assets</h3>
 
   <h4>Level 1 ship<h4>
   <img src = 'public/assets/sprites/player/l1.png'>
@@ -76,23 +77,87 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
       </ul>
     </li>
   </ul>
+  <h4>Ship firing frame matrix (to get n above)</h4>
+  <ul>
+    <li>'laser1': 2</li>
+    <li>'laser2': 3</li>
+    <li>'laser3': 4</li>
+    <li>'torpedo1': 5</li>
+    <li>'torpedo2': 5</li>
+    <li>'torpedo3': 5</li>
+  </ul>
+
+   <h4>l1 Laser<h4>
+  <img src = 'public/assets/sprites/player/laser1.png'>
+  <ul>
+    <li>Asset key: 'player-laser1'</li>
+    <li>path: 'public/assets/sprites/player/laser1.png'</li>
+    <li>dimensions: 16x32</li>
+  </ul>
+
+   <h4>l2 laser<h4>
+  <img src = 'public/assets/sprites/player/laser2.png'>
+  <ul>
+    <li>Asset key: 'player-laser2'</li>
+    <li>path: 'public/assets/sprites/player/laser2.png'</li>
+    <li>dimensions: 16x32</li>
+  </ul>
+
+   <h4>l3 laser<h4>
+  <img src = 'public/assets/sprites/player/laser3.png'>
+  <ul>
+    <li>Asset key: 'player-laser3'</li>
+    <li>path: 'public/assets/sprites/player/laser3.png'</li>
+    <li>dimensions: 16x80</li>
+  </ul>
+ <h4>laser blast<h4>
+  <img src = 'public/assets/sprites/player/player-laserblast.png'>
+  <ul>
+    <li>Asset key: 'player-laserblast'</li>
+    <li>path: 'public/assets/sprites/player/player-laserblast.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'player-laserblast-idle', frames: [0,1,2,3]</li>
+      </ul>
+    </li>
+  </ul>
+   <h4>l1 Torpedo<h4>
+  <img src = 'public/assets/sprites/player/torpedo1.png'>
+  <ul>
+    <li>Asset key: 'player-torpedo1'</li>
+    <li>path: 'public/assets/sprites/player/torpedo1.png'</li>
+    <li>dimensions: 16x16</li>
+  </ul>
+
+   <h4>l2 Torpedo<h4>
+  <img src = 'public/assets/sprites/player/torpedo2.png'>
+  <ul>
+    <li>Asset key: 'player-torpedo2'</li>
+    <li>path: 'public/assets/sprites/player/torpedo2.png'</li>
+    <li>dimensions: 16x16</li>
+  </ul>
+
+   <h4>l3 Torpedo<h4>
+  <img src = 'public/assets/sprites/player/torpedo3.png'>
+  <ul>
+    <li>Asset key: 'player-torpedo3'</li>
+    <li>path: 'public/assets/sprites/player/torpedo3.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'player-torpedo3-idle', frames: [0,1]</li>
+      </ul>
+    </li>
+  </ul>
+
+
 
   <img src = 'public/assets/bubble.png'><br />
 <h2>Open ocean</h2>
 <img src = 'doc/assets/ocean.png'>
   <h3>Enemies</h3>
   <p>Fish swim back and forth. Swimming animation sequence is 1,2,3,2Fish with noses ram the player. Shoort nose fishes shoot projectiles.</p>
-  <ul>
-    <li>Asset key: ''</li>
-    <li>path: ''</li>
-    <li>animations: 
-      <ul>
-        <li>key: '', frames: []</li>
-        <li>key: '', frames: []</li>
-        <li>key: '', frames: []</li>
-      </ul>
-    </li>
-  </ul>
   <p>Yardworm lives on the walls and has 3 frame animation to crawl up and down. Shoots projectiles at the player.</p>
   <p>Harmful Macroorganisms will spawn more often when health is high and will hurt the player</p>
   <h3>Projectiles</h3>
@@ -100,6 +165,20 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <p>Blast animation appears at origin of projectiles and is animated 1,2 and then disappears.
   <h3>Super Metrid</h3>
   <p>Boss Fight! Lots of health. Idle pulsating animation is 123,123. Attack animation is also 123,123</p>
+   
+   <h3>Assets</h3>
+   <h4>l3 Torpedo<h4>
+  <img src = 'public/assets/sprites/player/torpedo3.png'>
+  <ul>
+    <li>Asset key: 'player-torpedo3'</li>
+    <li>path: 'public/assets/sprites/player/torpedo3.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'player-torpedo3-idle', frames: [0,1]</li>
+      </ul>
+    </li>
+  </ul>
 <h2>Deep ocean</h2>
 <img src = 'doc/assets/deep.png'>
   <h3>Enemies</h3>
