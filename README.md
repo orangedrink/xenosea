@@ -35,7 +35,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
 <h2>Open ocean</h2>
 <img src = 'doc/assets/ocean.png'>
   <p>Fish with noses ram the player. Shoort nose fishes shoot projectiles. Swimming animation sequence is 1,2,3,2</p>
-  <p>Yardwork lives on th ewalls and has 3 fram animation to crawl up and down</p>
+  <p>Yardworm lives on th ewalls and has 3 fram animation to crawl up and down</p>
   <p>Harmful Macroorganisms will spawn more often when health is high and will hurt the player</p>
   <p>Projectiles shoot left and right and have a 4 frame blinking/rotating animation. 1234,1234</p>
   <p>Blast animation appears at origin of projectiles and is animated 1,2 and then disappears.
