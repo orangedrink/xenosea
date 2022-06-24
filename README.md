@@ -40,7 +40,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <ul>
     <li>Asset key: 'player-l1'</li>
     <li>path: 'public/assets/sprites/player/l1.png'</li>
-    <li>dimensions: 32x32</li>
+    <li>dimensions: 32x48</li>
     <li>animations: 
       <ul>
         <li>key: 'player-l1-idle', frames: [0]</li>
