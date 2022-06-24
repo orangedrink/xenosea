@@ -152,8 +152,8 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   </ul>
 
 
+<img src = 'public/assets/bubble.png'><br />
 
-  <img src = 'public/assets/bubble.png'><br />
 <h2>Open ocean</h2>
 <img src = 'doc/assets/ocean.png'>
   <h3>Enemies</h3>
@@ -199,6 +199,18 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
         <li>key: 'ocean-fish2-swim-right', frames: [0,1,2]</li>
         <li>key: 'ocean-fish2-attack-left', frames: [7]</li>
         <li>key: 'ocean-fish2-attack-right', frames: [3]</li>
+      </ul>
+    </li>
+  </ul><h4>Yardworm<h4>
+  <img src = 'public/assets/sprites/ocean/yardworm.png'>
+  <ul>
+    <li>Asset key: 'ocean-yardworm'</li>
+    <li>path: 'public/assets/sprites/ocean/yardworm.png'</li>
+    <li>dimensions: 32x32</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'ocean-yardworm-idle', frames: [2]</li>
+        <li>key: 'ocean-yardworm-crawl', frames: [1,2,3]</li>
       </ul>
     </li>
   </ul>
