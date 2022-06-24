@@ -15,7 +15,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
 <img src = 'doc/assets/deep.png'>
 <h2>Base</h2>
 <img src = 'doc/assets/base.png'>
-<h2>Other Tilesets</h2>
+<h2>Other assets and Tilesets</h2>
 <img src = 'doc/assets/rock.png'>
 <img src = 'doc/assets/metroidvania.png'>
 <!--
