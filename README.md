@@ -462,12 +462,10 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <img src = 'public/assets/bubble.png'><br />
 
   <h3>Assets</h3>
-  <h1>TO DO</h1>
+  <h4>TO DO</h4>
   <ul>
-
   <li>Dockdrone</li>
   <li>Dock</li>
-
   </ul>
 
 <h2>Other assets and Tilesets</h2>
