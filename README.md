@@ -52,7 +52,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <p>Angerfish swims back and forth and shoots like short nose fish but in rapid fire</p>
   <h3>Spore monster</h3>
   <p>Final unbeatable boss!
-  <p>One or more spore sprites with an array of smaller sprites on top of it. Lives on the sides of the walls and shoots at the player.</p>
+  <p>One or more spore sprites with an array of smaller sprites on top of it. Lives on the sides of the walls and shoots at the player? Descends from above forcing movement?</p>
   <p>An infinitely deep shaft so you can run up your depth score. Just a narrow shaft that repeats.</p>
   <img src = 'public/assets/bubble.png'><br />
 
