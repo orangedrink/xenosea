@@ -1,5 +1,14 @@
 
 
+<h1>XENOSEA</h1>
+<h2>Outline</h2>
+<h2>Player</h2>
+<img src = 'doc/assets/player.png'>
+<h2>Open ocean</h2>
+<h2>Deep ocean</h2>
+<h2>Base</h2>
+<h2>Other Tilesets</h2>
+
 <h1>XENOSEA was created using:</h1>
 <h1 align="center">
   <br>
