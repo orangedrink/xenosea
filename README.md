@@ -16,18 +16,23 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   </p>
 <h2>Player</h2>
 <img src = 'doc/assets/player.png'>
-  <h3>Firing</h3>
-  <p>...
+  <h3>Subs</h3>
+  <p>The ships are shown here with the first on the bottom the second on the middle and the final ship on the top. New ships are found at a dock and you dock your current ship to take off in the new one. Use bubble.png and particles for propusion.</p>
+  <h3>Projectiles</h3>
+  <p>The blast originates from the user. Smallest laser shoots single shot of med size laset beam. Med laser shoots one med laser and then rapid full auto fire of smallest laser. fire rate could depend on health per the limitation.
+  </p>
+  <p>Torpedoes use particle generatior of steam.png at origin and explosion.png at target. Large torpedo has 2 frame blink.</p>
+  <h3>Landing</h3>
+  <p>Only the final sub is able to land. Frame 3 serves as idle when landed.
   </p>
   <h3>Powerups</h3>
-  <p>...
-  </p>
-  <h3>Projectiles</h3>
-  <p>...
+  <p>Macroorganisms with the blue glow give health. Other powerups give new weapons
   </p>
 <h2>Open ocean</h2>
 <img src = 'doc/assets/ocean.png'>
   <p>Coming soon</p>
+  <h3>...</h3>
+  <p>...</p>
 <h2>Deep ocean</h2>
 <img src = 'doc/assets/deep.png'>
   <p>Coming soon</p>
