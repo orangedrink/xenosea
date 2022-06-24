@@ -16,15 +16,31 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   </p>
 <h2>Player</h2>
 <img src = 'doc/assets/player.png'>
+  <h3>Firing</h3>
+  <p>...
+  </p>
+  <h3>Powerups</h3>
+  <p>...
+  </p>
+  <h3>Projectiles</h3>
+  <p>...
+  </p>
 <h2>Open ocean</h2>
 <img src = 'doc/assets/ocean.png'>
+  <p>Coming soon</p>
 <h2>Deep ocean</h2>
 <img src = 'doc/assets/deep.png'>
+  <p>Coming soon</p>
+
 <h2>Base</h2>
 <img src = 'doc/assets/base.png'>
+  <p>Coming soon</p>
+
 <h2>Other assets and Tilesets</h2>
 <img src = 'doc/assets/rock.png'>
 <img src = 'doc/assets/metroidvania.png'>
+  <p>Coming soon</p>
+
 <!--
 ###########################################################################
 
