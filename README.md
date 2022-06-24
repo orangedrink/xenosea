@@ -14,6 +14,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <p>
   The limitation is \'health as a tool\'. The harmful macroorganisms will spawn more when you have high health and helpful macroorganisms when you have low health.  High health could also lessen the cooldown of your weapons so it's a give and take.
   </p>
+<img src = 'publuc/assets/bubble.png'>
 <h2>Player</h2>
 <img src = 'doc/assets/player.png'>
   <h3>Subs</h3>
