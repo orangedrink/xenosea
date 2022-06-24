@@ -214,6 +214,58 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
       </ul>
     </li>
   </ul>
+  </ul><h4>Macroorganism 1<h4>
+  <img src = 'public/assets/sprites/ocean/macroorganism1.png'>
+  <ul>
+    <li>Asset key: 'macroorganism1'</li>
+    <li>path: 'public/assets/sprites/ocean/macroorganism1.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'ocean-macroorganism1-idle', frames: [0,1]</li>
+        <li>key: 'ocean-macroorganism1-attack', frames: [0,1,2]</li>
+      </ul>
+    </li>
+  </ul>
+  </ul><h4>Macroorganism 2<h4>
+  <img src = 'public/assets/sprites/ocean/macroorganism2.png'>
+  <ul>
+    <li>Asset key: 'macroorganism2'</li>
+    <li>path: 'public/assets/sprites/ocean/macroorganism2.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'ocean-macroorganism2-idle', frames: [0,1]</li>
+        <li>key: 'ocean-macroorganism2-attack', frames: [0,1,2]</li>
+      </ul>
+    </li>
+  </ul>
+  </ul><h4>Macroorganism 3<h4>
+  <img src = 'public/assets/sprites/ocean/macroorganism3.png'>
+  <ul>
+    <li>Asset key: 'macroorganism3'</li>
+    <li>path: 'public/assets/sprites/ocean/macroorganism3.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'ocean-macroorganism3-idle', frames: [0,1]</li>
+        <li>key: 'ocean-macroorganism3-attack', frames: [0,1,2]</li>
+      </ul>
+    </li>
+  </ul>
+  /ul><h4>Super Metrid<h4>
+  <img src = 'public/assets/sprites/ocean/supermetrid.png'>
+  <ul>
+    <li>Asset key: 'supermetrid'</li>
+    <li>path: 'public/assets/sprites/ocean/supermetrid.png'</li>
+    <li>dimensions: 16x16</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'ocean-supermetrid-idle', frames: [0,1,2]</li>
+        <li>key: 'ocean-supermetrid-attack', frames: [3,4,5]</li>
+      </ul>
+    </li>
+  </ul>
 <h2>Deep ocean</h2>
 <img src = 'doc/assets/deep.png'>
   <h3>Enemies</h3>
