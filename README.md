@@ -35,8 +35,8 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
 <h2>Open ocean</h2>
 <img src = 'doc/assets/ocean.png'>
   <h3>Enemies</h3>
-  <p>Fish with noses ram the player. Shoort nose fishes shoot projectiles. Swimming animation sequence is 1,2,3,2</p>
-  <p>Yardworm lives on th ewalls and has 3 fram animation to crawl up and down</p>
+  <p>Fish swim back and forth. Swimming animation sequence is 1,2,3,2Fish with noses ram the player. Shoort nose fishes shoot projectiles.</p>
+  <p>Yardworm lives on the walls and has 3 frame animation to crawl up and down. Shoots projectiles at the player.</p>
   <p>Harmful Macroorganisms will spawn more often when health is high and will hurt the player</p>
   <h3>Projectiles</h3>
   <p>Projectiles shoot left and right and have a 4 frame blinking/rotating animation. 1234,1234</p>
@@ -45,8 +45,10 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <p>Boss Fight! Lots of health. Idle pulsating animation is 123,123. Attack animation is also 123,123</p>
 <h2>Deep ocean</h2>
 <img src = 'doc/assets/deep.png'>
+  <h3>Enemies</h3>
   <p>Fish with noses ram the player as in ocean section above</p>
-  <p>Coming soon</p>
+  <p>Crab crawls up and down usually on fungus. Shoots projectiles</p>
+  <p>Angerfish swims back and forth and shootls like short nose fish but in rapid fire</p>
   <img src = 'public/assets/bubble.png'><br />
 
 <h2>Base</h2>
