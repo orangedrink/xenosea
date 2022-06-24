@@ -468,6 +468,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <li>Dock</li>
   </ul>
  <img src = 'public/assets/bubble.png'><br />
+ 
 <h2>Other assets and Tilesets</h2>
 <img src = 'public/assets/tileset.png'>
 <img src = 'public/assets/steam.png'>
