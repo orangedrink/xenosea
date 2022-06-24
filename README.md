@@ -74,7 +74,6 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
 <img src = 'public/assets/steam.png'>
 <img src = 'public/assets/explosion.png'>
 <img src = 'public/assets/bubble.png'>
-  <p>Coming soon</p>
   <img src = 'public/assets/bubble.png'><br />
 
 <!--
