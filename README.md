@@ -167,15 +167,38 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <p>Boss Fight! Lots of health. Idle pulsating animation is 123,123. Attack animation is also 123,123</p>
    
    <h3>Assets</h3>
-   <h4>l3 Torpedo<h4>
-  <img src = 'public/assets/sprites/player/torpedo3.png'>
+
+   <h4>Ocean fish 1<h4>
+  <img src = 'public/assets/sprites/ocean/fish1.png'>
   <ul>
-    <li>Asset key: 'player-torpedo3'</li>
-    <li>path: 'public/assets/sprites/player/torpedo3.png'</li>
-    <li>dimensions: 16x16</li>
+    <li>Asset key: 'ocean-fish1'</li>
+    <li>path: 'public/assets/sprites/ocean/fish1.png'</li>
+    <li>dimensions: 48x32</li>
     <li>animations: 
       <ul>
-        <li>key: 'player-torpedo3-idle', frames: [0,1]</li>
+        <li>key: 'ocean-fish1-idle-left', frames: [5]</li>
+        <li>key: 'ocean-fish1-idle-right', frames: [1]</li>
+        <li>key: 'ocean-fish1-swim-left', frames: [4,5,6]</li>
+        <li>key: 'ocean-fish1-swim-right', frames: [0,1,2]</li>
+        <li>key: 'ocean-fish1-attack-left', frames: [7]</li>
+        <li>key: 'ocean-fish1-attack-right', frames: [3]</li>
+      </ul>
+    </li>
+  </ul>
+  <h4>Ocean fish 2<h4>
+  <img src = 'public/assets/sprites/ocean/fish2.png'>
+  <ul>
+    <li>Asset key: 'ocean-fish2'</li>
+    <li>path: 'public/assets/sprites/ocean/fish2.png'</li>
+    <li>dimensions: 48x32</li>
+    <li>animations: 
+      <ul>
+        <li>key: 'ocean-fish2-idle-left', frames: [5]</li>
+        <li>key: 'ocean-fish2-idle-right', frames: [1]</li>
+        <li>key: 'ocean-fish2-swim-left', frames: [4,5,6]</li>
+        <li>key: 'ocean-fish2-swim-right', frames: [0,1,2]</li>
+        <li>key: 'ocean-fish2-attack-left', frames: [7]</li>
+        <li>key: 'ocean-fish2-attack-right', frames: [3]</li>
       </ul>
     </li>
   </ul>
