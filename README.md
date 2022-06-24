@@ -43,6 +43,7 @@ Classic shooter flipped upside down as you descend into the life filled oceans o
   <p>Boss Fight! Lots of health. Idle pulsating animation is 123,123. Attack animation is also 123,123</p>
 <h2>Deep ocean</h2>
 <img src = 'doc/assets/deep.png'>
+  <p>Fish with noses ram the player as in ocean section above</p>
   <p>Coming soon</p>
   <img src = 'public/assets/bubble.png'><br />
 
