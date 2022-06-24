@@ -5,14 +5,14 @@
 
 <h2>Outline</h2>
 <p>
-Classic shooter flipped upside down as you descend into the life filled oceans of Europa.
+Classic shooter flipped upside down as you descend into the life filled oceans of Europa. 
 </p>
   <h3> Level design </h3>
   <p>tile based but with very tall levels. The idea is to get as much 'depth' as possible by descending mostly straight down. Repeating or infinite level at the end?
   </p>
   <h3>Limitation</h3>
   <p>
-  The limitation is health as a tool. The harmful macroorganisms will spawn more when you have high health and helpful macroorganisms when you have low health.  High health could also lessen the cooldown of your weapons so it's a give and take.
+  The limitation is \'health as a tool\'. The harmful macroorganisms will spawn more when you have high health and helpful macroorganisms when you have low health.  High health could also lessen the cooldown of your weapons so it's a give and take.
   </p>
 <h2>Player</h2>
 <img src = 'doc/assets/player.png'>
