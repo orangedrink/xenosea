@@ -36,7 +36,7 @@ export default class TitleScene extends Phaser.Scene {
         { frameWidth: 16, frameHeight: 80 }
     );
     this.load.spritesheet('player-laserblast', 
-        'assets/sprites/player/player-laserblast.png',
+        'assets/sprites/player/laserblast.png',
         { frameWidth: 16, frameHeight: 16 }
     );
     this.load.spritesheet('player-torpedo1', 
@@ -185,8 +185,8 @@ export default class TitleScene extends Phaser.Scene {
 
 
   create() {
-    const logo = this.add.image(400, 300, 'logo');
-
+    //const logo = this.add.image(400, 300, 'logo');
+    this.scene.start('GameScene');
 
   }
 }

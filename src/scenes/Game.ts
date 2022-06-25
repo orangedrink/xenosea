@@ -6,7 +6,6 @@ export default class Demo extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('logo', 'assets/comingsoon.png');
   }
 
   create() {
