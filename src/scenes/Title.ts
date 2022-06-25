@@ -180,7 +180,6 @@ export default class TitleScene extends Phaser.Scene {
         { frameWidth: 16, frameHeight: 16 }
     );
 
-
   }
 
 
