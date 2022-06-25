@@ -36,7 +36,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             }else if(this.weapon.indexOf('torpedo')==0){
                 duration = duration*5
             }
-            const laser = this.scene.add.image(this.x, this.y+yoff, `player-${this.weapon}`);
+            const laser = this.scene.physics.add.image(this.x, this.y+yoff, `player-${this.weapon}`);
+          
             this.scene.tweens.add({
                 targets: laser,
                 alpha: 1,
@@ -46,8 +47,15 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 onComplete: function () {
                     laser.destroy();
                 }
-              });    
-        
+              });
+              const _this = this;
+              this.scene.enemies.forEach(function(enemy){
+                _this.scene.physics.add.collider(laser, enemy, function (player, spr ){
+                    console.log('collide')
+                    spr.destroy()
+                    player.destroy()
+                },);    
+              })
     }
     private setShooting(shooting:boolean){
         if(this.shooting == shooting){
@@ -90,7 +98,6 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         }else{
             this.setShooting(false);
         }
-        console.log(t)
         if(this.shooting && t > this.lastShot + this.cooldown){
             this.lastShot = t;
             if(this.weapon == 'laser2' || this.weapon == 'laser3' ){
