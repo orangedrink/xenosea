@@ -135,12 +135,12 @@ export default class TitleScene extends Phaser.Scene {
 
     this.load.spritesheet('ocean-blast-left', 
         'assets/sprites/ocean/blast-left.png',
-        { frameWidth: 16, frameHeight: 16 }
+        { frameWidth: 32, frameHeight: 32 }
     );
 
     this.load.spritesheet('ocean-blast-right', 
         'assets/sprites/ocean/blast-right.png',
-        { frameWidth: 16, frameHeight: 16 }
+        { frameWidth: 32, frameHeight: 32 }
     );
 
     //DEEP ASSETS

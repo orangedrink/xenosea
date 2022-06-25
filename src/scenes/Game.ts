@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-
+import animDefs from './animDefs'
 export default class Demo extends Phaser.Scene {
   private animations: any;
   private animDefs: any;
@@ -14,14 +14,7 @@ export default class Demo extends Phaser.Scene {
 
   constructor() {
     super('GameScene');
-    this.animDefs = [
-      {
-        key:'player-l1-idle',
-        assetKey:'player-l3',
-        frames: [0,1,4,4,4,4,1,0,0,0],
-        rate: 8
-      }
-    ];
+    this.animDefs = animDefs;
     this.animations = [];
   }
 
@@ -32,7 +25,9 @@ export default class Demo extends Phaser.Scene {
     this.animDefs.forEach((anim: { key: string; assetKey: string; frames: any; rate: number; }) => {
       this.createAnim(anim.key,anim.assetKey,anim.frames, anim.rate);
     });
-    const spr = this.add.sprite(600, 370, 'player-l1');
-    spr.play({key:'player-l1-idle', repeat: -1});
+    const spr = this.add.sprite(600, 370, 'ocean-blast');
+    spr.play({key:'ocean-blast-right-idle', repeat: -1});
+    const spr2 = this.add.sprite(630, 370, 'ocean-blast');
+    spr2.play({key:'ocean-blast-left-idle', repeat: -1});
   }
 }
