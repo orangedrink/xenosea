@@ -16,10 +16,10 @@ export default class Demo extends Phaser.Scene {
     super('GameScene');
     this.animDefs = [
       {
-        key:'player-l3-idle',
-        assetKey:'player-l1',
-        frames: [0],
-        rate: 4
+        key:'player-l1-idle',
+        assetKey:'player-l3',
+        frames: [0,1,4,4,4,4,1,0,0,0],
+        rate: 8
       }
     ];
     this.animations = [];
@@ -29,7 +29,6 @@ export default class Demo extends Phaser.Scene {
   }
 
   create() {
-    const logo = this.add.image(400, 300, 'logo');
     this.animDefs.forEach((anim: { key: string; assetKey: string; frames: any; rate: number; }) => {
       this.createAnim(anim.key,anim.assetKey,anim.frames, anim.rate);
     });

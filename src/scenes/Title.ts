@@ -6,7 +6,7 @@ export default class TitleScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('logo', 'assets/comingsoon.png');
+    this.load.image('title', 'assets/title.png');
 
 //PLAYER ASSETS
 
@@ -19,8 +19,8 @@ export default class TitleScene extends Phaser.Scene {
         '/assets/sprites/player/l2.png',
         { frameWidth: 32, frameHeight: 48 }
     );
-    this.load.spritesheet('player-l2', 
-        '/assets/sprites/player/l2.png',
+    this.load.spritesheet('player-l3', 
+        '/assets/sprites/player/l3.png',
         { frameWidth: 32, frameHeight: 48 }
     );
     this.load.spritesheet('player-laser1', 
@@ -179,14 +179,28 @@ export default class TitleScene extends Phaser.Scene {
         'assets/sprites/deep/blast-right.png',
         { frameWidth: 16, frameHeight: 16 }
     );
-
+    this.load.audio('music', [
+      'assets/sounds/music.mp3'
+    ]);
   }
 
 
 
   create() {
-    //const logo = this.add.image(400, 300, 'logo');
-    this.scene.start('GameScene');
+    const title = this.add.image(400, 300, 'title');
+    title.alpha = 0;
+    this.tweens.add({
+      targets: title,
+      alpha: 1,
+      duration: 5000
+  });
+    var music = this.sound.add('music');
+
+    music.play();
+    this.input.keyboard.on('keyup', () => {
+      this.scene.start('GameScene');
+
+    }, this)
 
   }
 }
