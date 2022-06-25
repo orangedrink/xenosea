@@ -36,7 +36,7 @@ export default class Demo extends Phaser.Scene {
     });
     this.initLevel();
     const spr = this.add.sprite(400, 300, 'ocean-supermetrid');
-    this.player = new Player({x:400, y:100, scene: this, key:'player-l1'});
+    this.player = new Player({x:400, y:100, scene: this, key:'player-l3'});
     this.cameras.main.startFollow(this.player, true, 0.05, 0.05);
     spr.alpha = 0
     spr.play({key:'ocean-supermetrid-idle', repeat: -1});
@@ -52,10 +52,21 @@ export default class Demo extends Phaser.Scene {
       alpha: 1,
       duration: 1000,
     });
-
+    this.particles = this.add.particles('bubble');
+    this.particles.createEmitter({
+        y: this.player.y+200,
+        x: { min: 0, max: 800 },
+        lifespan: 4000,
+        speedY: { min: -80, max: -200  },
+        scale: { start: 0.8, end: 0 },
+        alpha: { start: 0.3, end: 0 },
+        quantity: 1,
+        blendMode: 'ADD'
+    });
   }
-  update(){
+  update(t,d){
     this.drawLevel();
-    this.player.update();
+    this.player.update(t,d);
+    this.particles.setPosition(this.player.x-400, this.player.y+200);
   }
 }

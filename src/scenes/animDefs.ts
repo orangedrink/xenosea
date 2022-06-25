@@ -1,11 +1,113 @@
 export default [
-    {
-      key:'player-l1-idle',
-      assetKey:'player-l3',
+   {
+    key:'player-l1-idle',
+    assetKey:'player-l1',
+        frames: [1,0],
+        rate: 8
+   },
+   {
+      key:'player-l1-shooting-laser1',
+      assetKey:'player-l1',
       frames: [0,1,2],
-      rate: 8
-    },
-    {
+      rate: 30
+   },
+   {
+      key:'player-l1-shooting-laser2',
+      assetKey:'player-l1',
+      frames: [0,1,3],
+      rate: 30
+   },
+   {
+    key:'player-l1-shooting-laser3',
+    assetKey:'player-l1',
+    frames: [0,1,4],
+    rate: 30
+   },
+   {
+      key:'player-l1-shooting-torpedo',
+      assetKey:'player-l1',
+      frames: [0,1,5],
+      rate: 30
+   },
+
+   {
+      key:'player-l2-idle',
+      assetKey:'player-l2',
+        frames: [1,0],
+        rate: 8
+   },
+   {
+      key:'player-l2-shooting-laser1',
+      assetKey:'player-l2',
+      frames: [0,1,2],
+      rate: 30
+   },
+   {
+      key:'player-l2-shooting-laser2',
+      assetKey:'player-l2',
+      frames: [0,1,3],
+      rate: 30
+   },
+   {
+    key:'player-l2-shooting-laser3',
+    assetKey:'player-l2',
+    frames: [0,1,4],
+    rate: 30
+   },
+   {
+      key:'player-l2-shooting-torpedo',
+      assetKey:'player-l2',
+      frames: [0,1,5],
+      rate: 30
+   },
+
+
+   {
+    key:'player-l3-idle',
+    assetKey:'player-l3',
+      frames: [1,0],
+      rate: 30
+ },
+ {
+    key:'player-l3-shooting-laser1',
+    assetKey:'player-l3',
+    frames: [0,1,2],
+    rate: 30
+ },
+ {
+    key:'player-l3-shooting-laser2',
+    assetKey:'player-l3',
+    frames: [0,1,3],
+    rate: 30
+ },
+ {
+  key:'player-l3-shooting-laser3',
+  assetKey:'player-l3',
+  frames: [0,1,4],
+  rate: 30
+ },
+ {
+  key:'player-l3-shooting-torpedo1',
+  assetKey:'player-l3',
+  frames: [0,1,5],
+  rate: 30
+},
+{
+  key:'player-l3-shooting-torpedo2',
+  assetKey:'player-l3',
+  frames: [0,1,5],
+  rate: 30
+},
+{
+  key:'player-l3-shooting-torpedo3',
+  assetKey:'player-l3',
+  frames: [0,1,5],
+  rate: 30
+},
+
+
+
+   {
       key:'ocean-fish1-idle',
       assetKey:'ocean-fish1',
       frames: [5],
