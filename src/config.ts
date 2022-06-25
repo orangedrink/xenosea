@@ -4,6 +4,13 @@ export default {
   type: Phaser.AUTO,
   parent: 'game',
   backgroundColor: '#000000',
+  physics: {
+    default: 'arcade',
+    arcade: {
+        fps: 60,
+        gravity: { y: 20 }
+    }
+  },
   scale: {
     width: 800,
     height: 600,

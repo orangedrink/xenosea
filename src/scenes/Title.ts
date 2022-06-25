@@ -103,22 +103,22 @@ export default class TitleScene extends Phaser.Scene {
         { frameWidth: 32, frameHeight: 32 }
     );
 
-    this.load.spritesheet('macroorganism1', 
+    this.load.spritesheet('ocean-macroorganism1', 
         'assets/sprites/ocean/macroorganism1.png',
         { frameWidth: 16, frameHeight: 16 }
     );
 
-    this.load.spritesheet('macroorganism2', 
+    this.load.spritesheet('ocean-macroorganism2', 
         'assets/sprites/ocean/macroorganism2.png',
         { frameWidth: 16, frameHeight: 16 }
     );
 
-    this.load.spritesheet('macroorganism3', 
+    this.load.spritesheet('ocean-macroorganism3', 
         'assets/sprites/ocean/macroorganism3.png',
         { frameWidth: 16, frameHeight: 16 }
     );
 
-    this.load.spritesheet('supermetrid', 
+    this.load.spritesheet('ocean-supermetrid', 
         'assets/sprites/ocean/supermetrid.png',
         { frameWidth: 64, frameHeight: 64 }
     );
@@ -193,13 +193,10 @@ export default class TitleScene extends Phaser.Scene {
       targets: title,
       alpha: 1,
       duration: 2000,
-      onCompleteScope: this,
-      onComplete:function(){
-
-      }
-  });
+    });
     var music = this.sound.add('music');
-
+    //comment the following out to show title screen
+    this.scene.start('GameScene')
     music.play();
     this.input.keyboard.on('keyup', () => {
       this.tweens.add({
