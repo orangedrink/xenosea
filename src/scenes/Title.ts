@@ -172,12 +172,12 @@ export default class TitleScene extends Phaser.Scene {
 
     this.load.spritesheet('deep-blast-left', 
         'assets/sprites/deep/blast-left.png',
-        { frameWidth: 16, frameHeight: 16 }
+        { frameWidth: 32, frameHeight: 32 }
     );
 
     this.load.spritesheet('deep-blast-right', 
         'assets/sprites/deep/blast-right.png',
-        { frameWidth: 16, frameHeight: 16 }
+        { frameWidth: 32, frameHeight: 32 }
     );
     this.load.audio('music', [
       'assets/sounds/music.mp3'

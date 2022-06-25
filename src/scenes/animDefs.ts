@@ -173,4 +173,154 @@ export default [
       frames: [0,1],
       rate: 8
     },
+    {
+        key:'deep-fish1-idle',
+        assetKey:'deep-fish1',
+        frames: [5],
+        rate: 8
+      },
+      {
+        key:'deep-fish1-idle-left',
+        assetKey:'deep-fish1-idle',
+        frames: [5],
+        rate: 8
+      },
+      {
+        key:'deep-fish1-idle-right',
+        assetKey:'deep-fish1-idle',
+        frames: [1],
+        rate: 8
+      },
+      {
+        key:'deep-fish1-swim-left',
+        assetKey:'deep-fish1-swim',
+        frames: [4,5,6],
+        rate: 8
+      },
+      {
+        key:'deep-fish1-swim-right',
+        assetKey:'deep-fish1-swim',
+        frames: [0,1,2],
+        rate: 8
+      },
+      {
+        key:'deep-fish1-attack-left',
+        assetKey:'deep-fish1-attack',
+        frames: [7],
+        rate: 8
+      },
+      {
+        key:'deep-fish1-attack-right',
+        assetKey:'deep-fish1-attack',
+        frames: [3],
+        rate: 8
+      },
+      {
+        key:'deep-fish2-idle',
+        assetKey:'deep-fish2',
+        frames: [4],
+        rate: 8
+      },
+      {
+        key:'deep-fish2-idle-left',
+        assetKey:'deep-fish2-idle',
+        frames: [4],
+        rate: 8
+      },
+      {
+        key:'deep-fish2-idle-right',
+        assetKey:'deep-fish2-idle',
+        frames: [1],
+        rate: 8
+      },
+      {
+        key:'deep-fish2-swim-left',
+        assetKey:'deep-fish2-swim',
+        frames: [3,4,5],
+        rate: 8
+      },
+      {
+        key:'deep-fish2-swim-right',
+        assetKey:'deep-fish2-swim',
+        frames: [0,1,2],
+        rate: 8
+      },
+      {
+        key:'deep-fish2-attack-left',
+        assetKey:'deep-fish2-attack',
+        frames: [4],
+        rate: 8
+      },
+      {
+        key:'deep-fish2-attack-right',
+        assetKey:'deep-fish2-attack',
+        frames: [1],
+        rate: 8
+      },
+      {
+        key:'deep-crab-idle',
+        assetKey:'deep-crab',
+        frames: [1],
+        rate: 8
+      },
+      {
+        key:'deep-crab-idle-down',
+        assetKey:'deep-crab-idle',
+        frames: [4],
+        rate: 8
+      },
+      {
+        key:'deep-crab-idle-up',
+        assetKey:'deep-crab-idle',
+        frames: [1],
+        rate: 8
+      },
+      {
+        key:'deep-crab-crawl-down',
+        assetKey:'deep-crab-crawl',
+        frames: [3,4,5],
+        rate: 8
+      },
+      {
+        key:'deep-crab-crawl-up',
+        assetKey:'deep-crab-crawl',
+        frames: [0,1,2],
+        rate: 8
+      },
+      {
+        key:'deep-crab-attack-down',
+        assetKey:'deep-crab-attack',
+        frames: [4],
+        rate: 8
+      },
+      {
+        key:'deep-crab-attack-up',
+        assetKey:'deep-crab-attack',
+        frames: [1],
+        rate: 8
+      },
+      {
+        key:'deep-projectile-left-idle',
+        assetKey:'deep-projectile-left',
+        frames: [0,1,2,3],
+        rate: 8
+      },
+      {
+        key:'deep-projectile-right-idle',
+        assetKey:'deep-projectile-right',
+        frames: [0,1,2,3],
+        rate: 8
+      },
+      {
+        key:'deep-blast-right-idle',
+        assetKey:'deep-blast-right',
+        frames: [0,1],
+        rate: 8
+      },
+      {
+        key:'deep-blast-left-idle',
+        assetKey:'deep-blast-left',
+        frames: [0,1],
+        rate: 8
+      },
   ];
