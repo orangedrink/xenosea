@@ -192,14 +192,25 @@ export default class TitleScene extends Phaser.Scene {
     this.tweens.add({
       targets: title,
       alpha: 1,
-      duration: 5000
+      duration: 2000,
+      onCompleteScope: this,
+      onComplete:function(){
+
+      }
   });
     var music = this.sound.add('music');
 
     music.play();
     this.input.keyboard.on('keyup', () => {
-      this.scene.start('GameScene');
-
+      this.tweens.add({
+        targets: title,
+        alpha: 0,
+        duration: 3000,
+        onCompleteScope: this,
+        onComplete: function () {
+          this.scene.start('GameScene')        
+        }
+      })
     }, this)
 
   }
