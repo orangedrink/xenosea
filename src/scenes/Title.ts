@@ -179,6 +179,20 @@ export default class TitleScene extends Phaser.Scene {
         'assets/sprites/deep/blast-right.png',
         { frameWidth: 32, frameHeight: 32 }
     );
+
+//LEVELS
+
+this.load.image('ice-wall-bg-left', 'assets/ice-wall-bg-left.png');
+this.load.image('ice-wall-bg-right', 'assets/ice-wall-bg-right.png');
+this.load.image('surface-bg', 'assets/surface-bg.png');
+
+
+//MISC
+this.load.image('bubble', 'assets/bubble.png');
+
+//MUSIC
+
+
     this.load.audio('music', [
       'assets/sounds/music.mp3'
     ]);
