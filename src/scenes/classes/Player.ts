@@ -155,7 +155,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             this.emitter.setAngle({min:0,max:360})
             this.emitter.setSpeedY({min:0,max:300})
             this.emitter.setSpeedX({min:0,max:300})
-            this.emitter.emitParticle(20)
+            this.emitter.emitParticle(200)
             this.scene.tweens.add({
                 targets: this.scene.background,
                 alpha: 0,

@@ -9,7 +9,7 @@ export default class DeepCrab extends Enemy {
     private lastChanged = 0;
     private timeInterval = 300
     public direction = 'up'
-    public damage = 5;
+    public damage = 40;
     private health = 3
     public hit(player): void {
         this.clearTint();

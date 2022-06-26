@@ -17,7 +17,7 @@ export default class Enemy extends Phaser.Physics.Arcade.Sprite {
                 }else{
                     player.weapon ='laser3';
                 }
-                if(player.range<500) player.range += 50 
+                if(player.range<500) player.range += 20 
                 powerup.setTintFill();
                 powerup.body.enable = false;
                 setTimeout(function(){powerup.destroy()},50)
