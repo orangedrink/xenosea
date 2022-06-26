@@ -5,8 +5,13 @@ export default class TitleScene extends Phaser.Scene {
     super('TitleScene');
   }
 
+
+  init(data){
+    this.lastDepth=data.depth;
+  }
   preload() {
     this.load.image('title', 'assets/title.png');
+    this.load.image('display', 'assets/display.png');
 
 //PLAYER ASSETS
 
@@ -203,16 +208,38 @@ this.load.image('bubble', 'assets/bubble.png');
   create() {
     const title = this.add.image(400, 300, 'title');
     title.alpha = 0;
+    if(this.lastDepth){
+        console.log('Depth reached: ', this.lastDepth);
+        this.depthText = this.add.text(290, 480, 'YOU REACHED A DEPTH OF '+ Math.round(this.lastDepth)+' Meters', {
+            font: "12px Arial",
+            color: '#8cf0fb',
+          });
+    }
     this.tweens.add({
       targets: title,
       alpha: 1,
       duration: 2000,
+      onCompleteScope: this,
+      onComplete: function () {
+        
+        this.input.keyboard.on('keyup', () => {
+            this.tweens.add({
+              targets: title,
+              alpha: 0,
+              duration: 1000,
+              onCompleteScope: this,
+              onComplete: function () {
+                this.scene.start('GameScene')        
+              }
+            })
+          }, this)     
+      }
     });
     var music = this.sound.add('music');
     //comment the following out to show title screen
-    this.scene.start('GameScene')
+    //this.scene.start('GameScene')
     music.play();
-    this.input.keyboard.on('keyup', () => {
+    /*this.input.keyboard.on('keyup', () => {
       this.tweens.add({
         targets: title,
         alpha: 0,
@@ -223,6 +250,6 @@ this.load.image('bubble', 'assets/bubble.png');
         }
       })
     }, this)
-
+*/
   }
 }

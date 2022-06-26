@@ -25,8 +25,36 @@ export default class Demo extends Phaser.Scene {
     this.level = levels[this.levelIndex];
     this.background = this.add.image(0, -100, this.level.background).setOrigin(0,0);
     this.background.setScrollFactor(0,.25);
+    this.background.alpha = 0;
+    this.tweens.add({
+      targets: this.background,
+      alpha: 1,
+      duration: 500,
+    })
+    this.display = this.add.image(700, 570, 'display');
+    this.display.setScrollFactor(0);
+    this.depthText = this.add.text(0, 0, '', {
+      font: "10px Consolas",
+      color: '#ffffff',
+    })
+    this.healthText = this.add.text(630, -100, 'HEALTH: 100%', {
+      font: "12px Arial",
+      color: '#ff2222',
+    })
+    this.healthText.scrollFactorX = 0
+    this.healthText.scrollFactorY = 0
   }
   private drawLevel(){
+    if(this.player.y-this.depthText.y>400){
+      this.depthText.setText('-DEPTH: '+Math.round(this.player.y)+' Meters')
+      this.depthText.y = this.player.y + 500;
+      this.depthText.x = this.player.x - 50;
+    }
+    this.healthText.x = 637
+    this.healthText.y = 520
+    this.healthText.setText('HEALTH: '+this.player.health+'%')
+
+
   }
   private updateEnemies(t,d){
     const _this = this;
@@ -54,15 +82,15 @@ export default class Demo extends Phaser.Scene {
     let spr = {};
     console.log(this.player.y)
     if(this.player.y<2000){
-      spr = new OceanFish1({x: (Math.random()*400)+this.player.x-200, y: (Math.random()*600)+this.player.y+300, scene: this});
+      spr = new OceanFish1({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
     } else if(this.player.y<4000){
-      spr = new OceanFish2({x: (Math.random()*400)+this.player.x-200, y: (Math.random()*600)+this.player.y+300, scene: this});
+      spr = new OceanFish2({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
     } else if(this.player.y<6000){
-      spr = new DeepFish1({x: (Math.random()*400)+this.player.x-200, y: (Math.random()*600)+this.player.y+300, scene: this});
+      spr = new DeepFish1({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
     } else if(this.player.y<8000){
-      spr = new DeepFish2({x: (Math.random()*400)+this.player.x-200, y: (Math.random()*600)+this.player.y+300, scene: this});
+      spr = new DeepFish2({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
     }else{
-      spr = new Supermetrid({x: (Math.random()*400)+this.player.x-200, y: (Math.random()*600)+this.player.y+300, scene: this});
+      spr = new Supermetrid({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
     }
     var _this = this;
     this.physics.add.collider(spr, this.player, function (enemy, player){
@@ -109,6 +137,12 @@ export default class Demo extends Phaser.Scene {
     });
     this.initLevel();
     this.player = new Player({x:400, y:100, scene: this, key:'player-l1'});
+    this.player.alpha = 0;
+    this.tweens.add({
+      targets: this.player,
+      alpha: 1,
+      duration: 1000,
+    })
     this.cameras.main.startFollow(this.player, true, 0.05, 0.05);
     this.keys = this.input.keyboard.addKeys({
       up: 'up',

@@ -142,8 +142,21 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         if(this.body.velocity.y>100){
             this.setVelocityY(100)
         }
-        if(this.health < 0){
+        if(this.health < 1){
             this.health = 0;
+            this.emitter.setAngle({min:0,max:360})
+            this.emitter.setSpeedY({min:0,max:300})
+            this.emitter.setSpeedX({min:0,max:300})
+            this.emitter.emitParticle(20)
+            this.scene.tweens.add({
+                targets: this.scene.background,
+                alpha: 0,
+                duration: 1000,
+                onCompleteScope: this,
+                onComplete: function () {
+                    this.scene.scene.start('TitleScene', {depth:this.y}) 
+                }
+              });
         }
     }
 }
