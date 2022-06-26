@@ -115,37 +115,37 @@ export default [
     },
     {
       key:'ocean-fish1-idle-left',
-      assetKey:'ocean-fish1-idle',
+      assetKey:'ocean-fish1',
       frames: [5],
       rate: 8
     },
     {
       key:'ocean-fish1-idle-right',
-      assetKey:'ocean-fish1-idle',
+      assetKey:'ocean-fish1',
       frames: [1],
       rate: 8
     },
     {
       key:'ocean-fish1-swim-left',
-      assetKey:'ocean-fish1-swim',
+      assetKey:'ocean-fish1',
       frames: [4,5,6],
       rate: 8
     },
     {
       key:'ocean-fish1-swim-right',
-      assetKey:'ocean-fish1-swim',
+      assetKey:'ocean-fish1',
       frames: [0,1,2],
       rate: 8
     },
     {
       key:'ocean-fish1-attack-left',
-      assetKey:'ocean-fish1-attack',
+      assetKey:'ocean-fish1',
       frames: [7],
       rate: 8
     },
     {
       key:'ocean-fish1-attack-right',
-      assetKey:'ocean-fish1-attack',
+      assetKey:'ocean-fish1',
       frames: [3],
       rate: 8
     },
@@ -157,37 +157,37 @@ export default [
     },
     {
       key:'ocean-fish2-idle-left',
-      assetKey:'ocean-fish2-idle',
+      assetKey:'ocean-fish2',
       frames: [5],
       rate: 8
     },
     {
       key:'ocean-fish2-idle-right',
-      assetKey:'ocean-fish2-idle',
+      assetKey:'ocean-fish2',
       frames: [1],
       rate: 8
     },
     {
       key:'ocean-fish2-swim-left',
-      assetKey:'ocean-fish2-swim',
+      assetKey:'ocean-fish2',
       frames: [4,5,6],
       rate: 8
     },
     {
       key:'ocean-fish2-swim-right',
-      assetKey:'ocean-fish2-swim',
+      assetKey:'ocean-fish2',
       frames: [0,1,2],
       rate: 8
     },
     {
       key:'ocean-fish2-attack-left',
-      assetKey:'ocean-fish2-attack',
+      assetKey:'ocean-fish2',
       frames: [7],
       rate: 8
     },
     {
       key:'ocean-fish2-attack-right',
-      assetKey:'ocean-fish2-attack',
+      assetKey:'ocean-fish2',
       frames: [3],
       rate: 8
     },
@@ -283,37 +283,37 @@ export default [
       },
       {
         key:'deep-fish1-idle-left',
-        assetKey:'deep-fish1-idle',
+        assetKey:'deep-fish1',
         frames: [5],
         rate: 8
       },
       {
         key:'deep-fish1-idle-right',
-        assetKey:'deep-fish1-idle',
+        assetKey:'deep-fish1',
         frames: [1],
         rate: 8
       },
       {
         key:'deep-fish1-swim-left',
-        assetKey:'deep-fish1-swim',
+        assetKey:'deep-fish1',
         frames: [4,5,6],
         rate: 8
       },
       {
         key:'deep-fish1-swim-right',
-        assetKey:'deep-fish1-swim',
+        assetKey:'deep-fish1',
         frames: [0,1,2],
         rate: 8
       },
       {
         key:'deep-fish1-attack-left',
-        assetKey:'deep-fish1-attack',
+        assetKey:'deep-fish1',
         frames: [7],
         rate: 8
       },
       {
         key:'deep-fish1-attack-right',
-        assetKey:'deep-fish1-attack',
+        assetKey:'deep-fish1',
         frames: [3],
         rate: 8
       },
@@ -325,37 +325,37 @@ export default [
       },
       {
         key:'deep-fish2-idle-left',
-        assetKey:'deep-fish2-idle',
+        assetKey:'deep-fish2',
         frames: [4],
         rate: 8
       },
       {
         key:'deep-fish2-idle-right',
-        assetKey:'deep-fish2-idle',
+        assetKey:'deep-fish2',
         frames: [1],
         rate: 8
       },
       {
         key:'deep-fish2-swim-left',
-        assetKey:'deep-fish2-swim',
+        assetKey:'deep-fish2',
         frames: [3,4,5],
         rate: 8
       },
       {
         key:'deep-fish2-swim-right',
-        assetKey:'deep-fish2-swim',
+        assetKey:'deep-fish2',
         frames: [0,1,2],
         rate: 8
       },
       {
         key:'deep-fish2-attack-left',
-        assetKey:'deep-fish2-attack',
+        assetKey:'deep-fish2',
         frames: [4],
         rate: 8
       },
       {
         key:'deep-fish2-attack-right',
-        assetKey:'deep-fish2-attack',
+        assetKey:'deep-fish2',
         frames: [1],
         rate: 8
       },
@@ -367,37 +367,37 @@ export default [
       },
       {
         key:'deep-crab-idle-down',
-        assetKey:'deep-crab-idle',
+        assetKey:'deep-crab',
         frames: [4],
         rate: 8
       },
       {
         key:'deep-crab-idle-up',
-        assetKey:'deep-crab-idle',
+        assetKey:'deep-crab',
         frames: [1],
         rate: 8
       },
       {
         key:'deep-crab-crawl-down',
-        assetKey:'deep-crab-crawl',
+        assetKey:'deep-crab',
         frames: [3,4,5],
         rate: 8
       },
       {
         key:'deep-crab-crawl-up',
-        assetKey:'deep-crab-crawl',
+        assetKey:'deep-crab',
         frames: [0,1,2],
         rate: 8
       },
       {
         key:'deep-crab-attack-down',
-        assetKey:'deep-crab-attack',
+        assetKey:'deep-crab',
         frames: [4],
         rate: 8
       },
       {
         key:'deep-crab-attack-up',
-        assetKey:'deep-crab-attack',
+        assetKey:'deep-crab',
         frames: [1],
         rate: 8
       },

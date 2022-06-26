@@ -2,6 +2,11 @@ import Phaser from 'phaser';
 import animDefs from './animDefs'
 import levels from '../levels'
 import Player from './classes/Player'
+import OceanFish1 from './classes/OceanFish1'
+import OceanFish2 from './classes/OceanFish2'
+import DeepFish1 from './classes/DeepFish1'
+import DeepFish2 from './classes/DeepFish2'
+import Supermetrid from './classes/Supermetrid'
 export default class Demo extends Phaser.Scene {
   private player: any;
   private animDefs: any;
@@ -23,22 +28,69 @@ export default class Demo extends Phaser.Scene {
   }
   private drawLevel(){
   }
-  private updateEnemies(){
+  private updateEnemies(t,d){
     const _this = this;
+    if(Math.random()>.5 && this.enemies.length<110-this.player.health){
+      this.spawnEnemy()
+    }
     this.enemies.forEach(function(enemy, i){
       if(enemy.active){
-        enemy.setVelocityY(-70) 
+        enemy.update(t,d)
+        if(_this.player.y-enemy.y>400){
+          enemy.destroy()
+          _this.enemies.splice(i,1)
+
+        }
       }else{
         console.log(enemy)
+        enemy.destroy()
         _this.enemies.splice(i,1)
         console.log(_this.enemies.length)
       }
     })
   }
-
+  
   private spawnEnemy(){
-    const spr = this.physics.add.sprite((this.enemies.length+1)*100, 400,  'ocean-supermetrid');
-    spr.play({key:'ocean-supermetrid-idle', repeat: -1});
+    let spr = {};
+    console.log(this.player.y)
+    if(this.player.y<2000){
+      spr = new OceanFish1({x: (Math.random()*400)+this.player.x-200, y: (Math.random()*600)+this.player.y+300, scene: this});
+    } else if(this.player.y<4000){
+      spr = new OceanFish2({x: (Math.random()*400)+this.player.x-200, y: (Math.random()*600)+this.player.y+300, scene: this});
+    } else if(this.player.y<6000){
+      spr = new DeepFish1({x: (Math.random()*400)+this.player.x-200, y: (Math.random()*600)+this.player.y+300, scene: this});
+    } else if(this.player.y<8000){
+      spr = new DeepFish2({x: (Math.random()*400)+this.player.x-200, y: (Math.random()*600)+this.player.y+300, scene: this});
+    }else{
+      spr = new Supermetrid({x: (Math.random()*400)+this.player.x-200, y: (Math.random()*600)+this.player.y+300, scene: this});
+    }
+    var _this = this;
+    this.physics.add.collider(spr, this.player, function (enemy, player){
+      player.health-=enemy.damage;
+      //enemy.destroy()
+      player.setTintFill();
+      player.setScale(.75);
+      _this.tweens.add({
+        targets: player,
+        scale: 1,
+        duration: 100,
+        onCompleteScope: _this,
+        onComplete: function () {
+          player.clearTint();
+        }
+    });
+
+      _this.tweens.add({
+        targets: enemy,
+        scale: 0,
+        duration: 50,
+        onCompleteScope: _this,
+        onComplete: function () {
+          enemy.destroy();
+        }
+      })
+      console.log(_this.player.health)
+    })
     this.enemies.push(spr);
   }
 
@@ -56,10 +108,7 @@ export default class Demo extends Phaser.Scene {
       this.createAnim(anim.key,anim.assetKey,anim.frames, anim.rate);
     });
     this.initLevel();
-    this.player = new Player({x:400, y:100, scene: this, key:'player-l3'});
-    this.spawnEnemy();
-    this.spawnEnemy();
-    this.spawnEnemy();
+    this.player = new Player({x:400, y:100, scene: this, key:'player-l1'});
     this.cameras.main.startFollow(this.player, true, 0.05, 0.05);
     this.keys = this.input.keyboard.addKeys({
       up: 'up',
@@ -84,12 +133,14 @@ export default class Demo extends Phaser.Scene {
         quantity: 1,
         blendMode: 'ADD'
     });
+    this.spawnEnemy()
+
   }
   update(t,d){
     this.timer = t;
     this.drawLevel();
-    this.updateEnemies()
     this.player.update(t,d);
+    this.updateEnemies(t,d)
     this.particles.setPosition(this.player.x-400, this.player.y+200);
   }
 }

@@ -8,7 +8,7 @@ export default {
     default: 'arcade',
     arcade: {
         fps: 60,
-        gravity: { y: 20 }
+        gravity: { y: 20 },
     }
   },
   scale: {

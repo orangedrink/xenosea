@@ -5,6 +5,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.scene.add.existing(this);
         this.ship = config.key;
         this.scene.physics.add.existing(this);
+        this.body.useDamping=true;
+        this.setDrag(.4)
         var particles = this.scene.add.particles('bubble');
 
         this.emitter = particles.createEmitter({
@@ -21,41 +23,56 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
     public direction: any;
     public shooting: boolean = false;
-    public speed = 40;
+    public speed = 50;
     public weapon = 'laser1';
     public ship;
-    public cooldown = 60
+    public cooldown = 90
     private lastShot = 0;
-    private range = 300
+    private range = 300;
+    public health = 100;
     private doShoot(){
         
             let yoff = 16;
-            let duration = this.range
+            let duration = this.range *2
+            let speed = this.range;
             if(this.weapon=='laser3'){
                 yoff = 40
             }else if(this.weapon.indexOf('torpedo')==0){
                 duration = duration*5
+                speed = duration/4
             }
             const laser = this.scene.physics.add.image(this.x, this.y+yoff, `player-${this.weapon}`);
-          
-            this.scene.tweens.add({
+            laser.setVelocityY(speed)
+              const _this = this;
+              this.scene.enemies.forEach(function(enemy){
+                console.log('collider added')
+                _this.scene.physics.add.collider(laser, enemy, function (laser, spr ){
+                    console.log('collide')
+                    spr.setTintFill()
+                    _this.scene.tweens.add({
+                        targets: spr,
+                        scale: 0,
+                        duration: 50,
+                        onCompleteScope: this,
+                        onComplete: function () {
+                            spr.hit();
+                        }
+                      })
+                    laser.destroy()
+                });
+                    
+              })
+
+              this.scene.tweens.add({
                 targets: laser,
-                alpha: 1,
-                y: this.y+this.range,
+                alpha: .25,
                 duration: duration,
                 onCompleteScope: this,
                 onComplete: function () {
                     laser.destroy();
                 }
               });
-              const _this = this;
-              this.scene.enemies.forEach(function(enemy){
-                _this.scene.physics.add.collider(laser, enemy, function (player, spr ){
-                    console.log('collide')
-                    spr.destroy()
-                    player.destroy()
-                },);    
-              })
+
     }
     private setShooting(shooting:boolean){
         if(this.shooting == shooting){
@@ -114,13 +131,19 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             this.emitter.emitParticle(1)
             this.emitter.setAngle({min:90,max:0})
             if(this.y>0){
-                this.setVelocityY(0-this.speed)
+                this.setVelocityY(0-this.speed*2)
             }
         } else if(this.direction == 'down'){
-            this.setVelocityY(this.speed)
+            this.setVelocityY(this.body.velocity.y+this.speed)
         } else {
             this.emitter.frequency=1000;
             this.emitter.setSpeedY(2);
+        }
+        if(this.body.velocity.y>100){
+            this.setVelocityY(100)
+        }
+        if(this.health < 0){
+            this.health = 0;
         }
     }
 }
