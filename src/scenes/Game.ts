@@ -4,9 +4,11 @@ import levels from '../levels'
 import Player from './classes/Player'
 import OceanFish1 from './classes/OceanFish1'
 import OceanFish2 from './classes/OceanFish2'
+import Yardworm from './classes/Yardworm'
 import DeepFish1 from './classes/DeepFish1'
 import DeepFish2 from './classes/DeepFish2'
 import Supermetrid from './classes/Supermetrid'
+import Crab from './classes/Crab'
 export default class Demo extends Phaser.Scene {
   private player: any;
   private animDefs: any;
@@ -46,19 +48,21 @@ export default class Demo extends Phaser.Scene {
   }
   private drawLevel(){
     if(this.player.y-this.depthText.y>400){
-      this.depthText.setText('-DEPTH: '+Math.round(this.player.y)+' Meters')
+      this.depthText.setText('-DEPTH: '+Math.round(this.player.y+500)+' Meters')
       this.depthText.y = this.player.y + 500;
       this.depthText.x = this.player.x - 50;
     }
     this.healthText.x = 637
     this.healthText.y = 520
-    this.healthText.setText('HEALTH: '+this.player.health+'%')
+    let health = this.player.health;
+    if (health > 100)health = 100
+    this.healthText.setText('HEALTH: '+health+'%')
 
 
   }
   private updateEnemies(t,d){
     const _this = this;
-    if(Math.random()>.5 && this.enemies.length<110-this.player.health){
+    if(Math.random()>.5 && this.enemies.length<105-this.player.health){
       this.spawnEnemy()
     }
     this.enemies.forEach(function(enemy, i){
@@ -81,12 +85,14 @@ export default class Demo extends Phaser.Scene {
     console.log('swarm size:' + this.enemies.length)
     if(this.player.y<2000){
       spr = new OceanFish1({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
-    } else if(this.player.y<4000){
-      spr = new OceanFish2({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
-    } else if(this.player.y<6000){
+    } else if(this.player.y<5000){
+      spr = new Yardworm({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
+    } else if(this.player.y<7000){
       spr = new DeepFish1({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
-    } else if(this.player.y<8000){
+    } else if(this.player.y<10000){
       spr = new DeepFish2({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
+    } else if(this.player.y<15000){
+      spr = new Crab({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
     }else{
       spr = new Supermetrid({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
     }
@@ -165,8 +171,8 @@ export default class Demo extends Phaser.Scene {
         blendMode: 'ADD'
     });
     this.spawnEnemy()
-
   }
+
   update(t,d){
     this.timer = t;
     this.drawLevel();

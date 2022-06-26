@@ -105,7 +105,7 @@ export default class TitleScene extends Phaser.Scene {
 
     this.load.spritesheet('ocean-yardworm', 
         'assets/sprites/ocean/yardworm.png',
-        { frameWidth: 32, frameHeight: 32 }
+        { frameWidth: 32, frameHeight: 48 }
     );
 
     this.load.spritesheet('ocean-macroorganism1', 
@@ -210,7 +210,7 @@ this.load.image('bubble', 'assets/bubble.png');
     title.alpha = 0;
     if(this.lastDepth){
         console.log('Depth reached: ', this.lastDepth);
-        this.depthText = this.add.text(285, 480, 'YOU REACHED A DEPTH OF '+ Math.round(this.lastDepth)+' Meters', {
+        this.depthText = this.add.text(280, 480, 'YOU REACHED A DEPTH OF '+ Math.round(this.lastDepth)+' METERS', {
             font: "12px Arial",
             color: '#8cf0fb',
           });

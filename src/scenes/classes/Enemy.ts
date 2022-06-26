@@ -6,8 +6,24 @@ export default class Enemy extends Phaser.Physics.Arcade.Sprite {
         this.scene.physics.add.existing(this);
     }
     public damage = 1;
-    public hit(){
-        this.destroy();
+    public hit(player, callback){
+        player.health += this.damage;        
         console.log('Enemy destroyed!')
+        if(Math.random()*100>90){
+            player.createPowerUp(this.x, this.y, 'powerup-laser2', function(powerup, player){
+                console.log('powerup collider')
+                if(player.weapon =='laser1'){
+                    player.weapon ='laser2';
+                }else{
+                    player.weapon ='laser3';
+                }
+                if(player.range<500) player.range += 50 
+                powerup.setTintFill();
+                powerup.body.enable = false;
+                setTimeout(function(){powerup.destroy()},50)
+            })                               
+        }
+ 
+        this.destroy();
     }
 }

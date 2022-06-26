@@ -51,9 +51,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                         targets: spr,
                         scale: 0,
                         duration: 50,
-                        onCompleteScope: this,
+                        onCompleteScope: _this,
                         onComplete: function () {
-                            spr.hit();
+
+                            spr.hit(_this.scene.player);
                         }
                       })
                     laser.destroy()
@@ -72,6 +73,15 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
               });
 
     }
+    public createPowerUp(x,y, type, colideHandler){
+
+        const powerup = this.scene.physics.add.image(x, y, type);
+        this.scene.physics.add.collider(powerup, this, colideHandler)
+        powerup.setVelocityY(-16);
+        powerup.setVelocityX(8-(Math.random()*16));
+        console.log('powerup!', type)
+    }
+
     private setShooting(shooting:boolean){
         if(this.shooting == shooting){
             return;
@@ -155,6 +165,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                     this.scene.scene.start('TitleScene', {depth:this.y}) 
                 }
               });
+        }else if(this.health > 100){
+            this.health = 100;
         }
     }
 }

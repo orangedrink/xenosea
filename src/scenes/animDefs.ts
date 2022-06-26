@@ -200,7 +200,7 @@ export default [
     {
       key:'ocean-yardworm-crawl',
       assetKey:'ocean-yardworm',
-      frames: [1,2,3],
+      frames: [0,1,2],
       rate: 8
     },
     {
@@ -386,7 +386,7 @@ export default [
       {
         key:'deep-crab-crawl-up',
         assetKey:'deep-crab',
-        frames: [0,1,2],
+        frames: [0,1,2,1],
         rate: 8
       },
       {

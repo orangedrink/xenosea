@@ -4,7 +4,7 @@ export default class OceanFish1 extends Enemy {
     constructor(config:any) {
         config.key = 'ocean-supermetrid';
         super(config);
-        this.health = 15 - (this.scene.player.health / 10);
+        this.health = 20 - (this.scene.player.health / 10);
         this.setScale(1.5)
 
     }
@@ -13,7 +13,7 @@ export default class OceanFish1 extends Enemy {
     public direction = 'right'
     public damage = 50;
     private health;
-    public hit(): void {
+    public hit(player): void {
         this.clearTint();
         this.setScale(1.5)
         if(this.health>0){
@@ -22,6 +22,19 @@ export default class OceanFish1 extends Enemy {
             this.destroy();
             console.log('hit', this.health)
         }
+        player.health += 10;
+
+        if(Math.random()*100>90){
+            player.createPowerUp(this.x, this.y, 'powerup-torpedo1', function(powerup, player){
+            console.log('powerup collider')
+            player.ship ='player-l3'
+            player.speed = 80;
+            powerup.setTintFill();
+            powerup.body.enable = false;
+            setTimeout(function(){powerup.destroy()},50)
+        })                               
+    }
+
     }
     update(t,d){
         if(t>this.lastChanged+this.timeInterval && Math.random()>.75){

@@ -9,6 +9,7 @@ export default class OceanFish1 extends Enemy {
     private timeInterval = 3000
     public direction = 'right'
     public damage = 1;
+    
     update(t,d){
         if(t>this.lastChanged+this.timeInterval && Math.random()>.75){
             this.lastChanged = t;
