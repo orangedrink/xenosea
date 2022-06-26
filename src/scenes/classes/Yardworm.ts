@@ -9,7 +9,7 @@ export default class OceanFish1 extends Enemy {
     private lastChanged = 0;
     private timeInterval = 300
     public direction = 'up'
-    public damage = 5;
+    public damage = 10;
     update(t,d){
         let vel;
         if(Math.abs(this.scene.player.x-this.x)<100){

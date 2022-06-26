@@ -9,8 +9,8 @@ export default class DeepCrab extends Enemy {
     private lastChanged = 0;
     private timeInterval = 300
     public direction = 'up'
-    public damage = 40;
-    private health = 3
+    public damage = 30;
+private health = 2
     public hit(player): void {
         this.clearTint();
         this.setScale(1.5)
@@ -20,11 +20,11 @@ export default class DeepCrab extends Enemy {
             this.destroy();
             console.log('hit', this.health)
         }
-        player.health += 10;        
+        player.health += 20;        
         if(Math.random()*100>90){
                 player.createPowerUp(this.x, this.y, 'powerup-torpedo1', function(powerup, player){
                 console.log('powerup collider')
-                player.ship ='player-l2'
+                player.ship ='player-l3'
                 player.speed = 60;
                 powerup.setTintFill();
                 powerup.body.enable = false;
@@ -32,7 +32,7 @@ export default class DeepCrab extends Enemy {
             })                               
         }
 
-
+    
 
 
     }

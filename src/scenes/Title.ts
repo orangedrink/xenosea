@@ -105,7 +105,7 @@ export default class TitleScene extends Phaser.Scene {
 
     this.load.spritesheet('ocean-yardworm', 
         'assets/sprites/ocean/yardworm.png',
-        { frameWidth: 32, frameHeight: 48 }
+        { frameWidth: 32, frameHeight: 64 }
     );
 
     this.load.spritesheet('ocean-macroorganism1', 
