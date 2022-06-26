@@ -92,9 +92,9 @@ export default class Demo extends Phaser.Scene {
     } else if(this.player.y<10000){
       spr = new DeepFish2({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
     } else if(this.player.y<15000){
-      spr = new Crab({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
-    }else{
       spr = new Supermetrid({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
+    }else{
+      spr = new Crab({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
     }
     var _this = this;
     this.physics.add.collider(spr, this.player, function (enemy, player){

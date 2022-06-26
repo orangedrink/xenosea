@@ -20,19 +20,20 @@ export default class OceanFish1 extends Enemy {
             this.health--;
         }else{
             this.destroy();
-            console.log('hit', this.health)
+            if(Math.random()*100>90){
+                player.createPowerUp(this.x, this.y, 'powerup-torpedo1', function(powerup, player){
+                console.log('powerup collider')
+                player.ship ='player-l2'
+                player.speed = 90;
+                player.play('player-l2-idle')
+                powerup.setTintFill();
+                powerup.body.enable = false;
+                setTimeout(function(){powerup.destroy()},50)
+            })  
         }
         player.health += 10;
 
-        if(Math.random()*100>90){
-            player.createPowerUp(this.x, this.y, 'powerup-torpedo1', function(powerup, player){
-            console.log('powerup collider')
-            player.ship ='player-l3'
-            player.speed = 80;
-            powerup.setTintFill();
-            powerup.body.enable = false;
-            setTimeout(function(){powerup.destroy()},50)
-        })                               
+                                               
     }
 
     }
