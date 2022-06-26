@@ -70,17 +70,15 @@ export default class Demo extends Phaser.Scene {
 
         }
       }else{
-        console.log(enemy)
         enemy.destroy()
         _this.enemies.splice(i,1)
-        console.log(_this.enemies.length)
       }
     })
   }
   
   private spawnEnemy(){
     let spr = {};
-    console.log(this.player.y)
+    console.log('swarm size:' + this.enemies.length)
     if(this.player.y<2000){
       spr = new OceanFish1({x: (Math.random()*1000)+this.player.x-600, y: (Math.random()*600)+this.player.y+300, scene: this});
     } else if(this.player.y<4000){
@@ -117,7 +115,6 @@ export default class Demo extends Phaser.Scene {
           enemy.destroy();
         }
       })
-      console.log(_this.player.health)
     })
     this.enemies.push(spr);
   }

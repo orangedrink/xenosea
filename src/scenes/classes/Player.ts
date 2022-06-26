@@ -45,9 +45,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             laser.setVelocityY(speed)
               const _this = this;
               this.scene.enemies.forEach(function(enemy){
-                console.log('collider added')
                 _this.scene.physics.add.collider(laser, enemy, function (laser, spr ){
-                    console.log('collide')
                     spr.setTintFill()
                     _this.scene.tweens.add({
                         targets: spr,

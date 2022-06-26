@@ -8,6 +8,6 @@ export default class Enemy extends Phaser.Physics.Arcade.Sprite {
     public damage = 1;
     public hit(){
         this.destroy();
-        console.log('enemy')
+        console.log('Enemy destroyed!')
     }
 }

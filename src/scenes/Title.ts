@@ -210,7 +210,7 @@ this.load.image('bubble', 'assets/bubble.png');
     title.alpha = 0;
     if(this.lastDepth){
         console.log('Depth reached: ', this.lastDepth);
-        this.depthText = this.add.text(290, 480, 'YOU REACHED A DEPTH OF '+ Math.round(this.lastDepth)+' Meters', {
+        this.depthText = this.add.text(285, 480, 'YOU REACHED A DEPTH OF '+ Math.round(this.lastDepth)+' Meters', {
             font: "12px Arial",
             color: '#8cf0fb',
           });
