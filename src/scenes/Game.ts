@@ -33,30 +33,38 @@ export default class Demo extends Phaser.Scene {
       alpha: 1,
       duration: 500,
     })
-    this.display = this.add.image(700, 570, 'display');
+    this.display = this.add.image(400, 40, 'display');
     this.display.setScrollFactor(0);
+    this.instructionText = this.add.text(400, 300, 'Explore the icy depths of Europa. Arrow keys to move. Spaebar to shoot.', {
+      font: "10px Consolas",
+      color: '#ffffff',
+    }).setOrigin(0.5)
     this.depthText = this.add.text(0, 0, '', {
       font: "10px Consolas",
       color: '#ffffff',
     })
-    this.healthText = this.add.text(630, -100, 'HEALTH: 100%', {
-      font: "12px Arial",
-      color: '#ff2222',
-    })
-    this.healthText.scrollFactorX = 0
-    this.healthText.scrollFactorY = 0
+
+    this.healthBar = this.add.rectangle(400, 45, 600, 15, 0xaa2222, 1)
+    this.healthBar.scrollFactorX = 0
+    this.healthBar.scrollFactorY = 0
   }
   private drawLevel(){
+    const _this = this;
     if(this.player.y-this.depthText.y>400){
       this.depthText.setText('-DEPTH: '+Math.round(this.player.y+500)+' Meters')
       this.depthText.y = this.player.y + 500;
       this.depthText.x = this.player.x - 50;
     }
-    this.healthText.x = 637
-    this.healthText.y = 520
-    let health = this.player.health;
-    if (health > 100)health = 100
-    this.healthText.setText('HEALTH: '+health+'%')
+    if(this.player.health > 100)this.player.health = 100
+    if(this.player.health < 0)this.player.health = 0
+    //this.healthBar.width = this.player.health*6;
+    this.tweens.add({
+      targets: this.healthBar,
+      width: this.player.health*6,
+      duration: 50,
+    })
+    this.healthBar.setDepth(1000)
+    this.display.setDepth(1000)
 
 
   }

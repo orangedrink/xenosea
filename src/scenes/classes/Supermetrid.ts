@@ -24,7 +24,7 @@ export default class OceanFish1 extends Enemy {
                 player.createPowerUp(this.x, this.y, 'powerup-torpedo1', function(powerup, player){
                 console.log('powerup collider')
                 player.ship ='player-l2'
-                player.speed = 90;
+                player.speed = 120;
                 player.play('player-l2-idle')
                 powerup.setTintFill();
                 powerup.body.enable = false;
