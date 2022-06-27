@@ -198,9 +198,7 @@ this.load.image('bubble', 'assets/bubble.png');
 //MUSIC
 
 
-    this.load.audio('music', [
-      'assets/sounds/music.mp3'
-    ]);
+    this.load.audio('music', ['assets/sounds/music.ogg']);
   }
 
 
@@ -235,7 +233,7 @@ this.load.image('bubble', 'assets/bubble.png');
           }, this)     
       }
     });
-    var music = this.sound.add('music');
+    var music = this.sound.add('music', { loop: true });
     //comment the following out to show title screen
     //this.scene.start('GameScene')
     music.play();
