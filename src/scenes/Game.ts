@@ -35,7 +35,7 @@ export default class Demo extends Phaser.Scene {
     })
     this.display = this.add.image(400, 40, 'display');
     this.display.setScrollFactor(0);
-    this.instructionText = this.add.text(400, 300, 'Explore the icy depths of Europa. Arrow keys to move. Spaebar to shoot.', {
+    this.instructionText = this.add.text(400, 300, 'Explore the icy depths of Europa. Arrow keys to move. Spacebar to shoot.', {
       font: "10px Consolas",
       color: '#ffffff',
     }).setOrigin(0.5)

@@ -35,6 +35,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             let yoff = 16;
             let duration = this.range *2
             let speed = this.range;
+            //this.health--
             if(this.weapon=='laser3'){
                 yoff = 40
             }else if(this.weapon.indexOf('torpedo')==0){
